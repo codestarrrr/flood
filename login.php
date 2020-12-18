@@ -5,7 +5,7 @@
 		
 	$login=$_POST['username'];
 	$password=$_POST['password'];
-	$result=mysql_query("SELECT * FROM POgKk335ek.login3 WHERE username='$login' AND password='$password'")or die (mysql_error());
+	$result=mysql_query("SELECT * FROM login3 WHERE username='$login' AND password='$password'")or die (mysql_error());
 	
 $count=mysql_num_rows($result);
 $row=mysql_fetch_array($result);
@@ -16,7 +16,7 @@ $row=mysql_fetch_array($result);
 	
 	$login = $_POST['username'];
 	$password = $_POST['password'];
-	$result = mysql_query("SELECT * FROM POgKk335ek.login3 WHERE username='$login' AND password='$password'")or die (mysql_error());
+	$result = mysql_query("SELECT * FROM login3 WHERE username='$login' AND password='$password'")or die (mysql_error());
 	while($row = mysql_fetch_array($result))
 		{
 		$position = $row['type1'];
@@ -25,7 +25,7 @@ $row=mysql_fetch_array($result);
 	if ($position=='admin')
 	{
 		echo '1';
-	 $qry="SELECT * FROM POgKk335ek.login3 WHERE username='$login' AND password='$password'";
+	 $qry="SELECT * FROM login3 WHERE username='$login' AND password='$password'";
 		$result=mysql_query($qry);
 		if($result) {
 			if(mysql_num_rows($result) > 0) {
@@ -45,7 +45,7 @@ $row=mysql_fetch_array($result);
 	}
 	if ($position=='')
 	{
-		$qry="SELECT * FROM POgKk335ek.login3 WHERE username='$login' AND password='$password'";
+		$qry="SELECT * FROM login3 WHERE username='$login' AND password='$password'";
 		$result=mysql_query($qry);
 		if($result) {
 			if(mysql_num_rows($result) > 0) {
