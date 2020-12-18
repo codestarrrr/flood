@@ -8,9 +8,9 @@ error_reporting(E_ALL ^ E_DEPRECATED);
 
 //remote database connection
 $db_host		= 'remotemysql.com';
-$db_user		= 'POgKk335ek';
-$db_pass		= 'UDdlG5FYNy';
-$db_database	= 'POgKk335ek'; 
+$db_user		= 'i005D6EVem';
+$db_pass		= 'dB94tlkFF5';
+$db_database	= 'i005D6EVem'; 
 
 
 $link = mysql_connect($db_host,$db_user,$db_pass) or die('Unable to establish a DB connection');
